@@ -13,5 +13,9 @@
     "@astrojs/solid-js": "^3.0.1",
     "astro": "^3.0.12",
     "solid-js": "^1.7.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
