@@ -1,0 +1,12 @@
+.video-list-item {
+  position: relative;
+}
+
+.duration {
+  position: absolute;
+  top: 190px;
+  right: 8px;
+  padding: 4px 8px;
+  background-color: #000000bb;
+  border-radius: 4px;
+}

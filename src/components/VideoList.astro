@@ -1,0 +1,31 @@
+---
+
+---
+
+<ul class="video-list">
+  <slot />
+</ul>
+<style>
+  .video-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 16px;
+    row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (max-width: 1024px) {
+    .video-list {
+      grid-template-columns: repeat(2, 300px);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .video-list {
+      grid-template-columns: repeat(1, 300px);
+    }
+  }
+</style>

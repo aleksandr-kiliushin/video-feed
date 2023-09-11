@@ -1,0 +1,17 @@
+---
+interface Props {
+  count: number
+}
+
+const { count } = Astro.props
+---
+
+<div class="lightgray-text text-centered results-count">
+  {count}{" "}
+  {count === 1 ? "video" : "videos"} found
+</div>
+<style>
+  .results-count {
+    grid-area: results-count;
+  }
+</style>

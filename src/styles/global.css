@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.lightgray-text {
+  color: lightgray;
+}
+
+main {
+  max-width: 964px;
+  margin: 80px auto 0;
+  padding: 8px 16px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 100px;
+  }
+}

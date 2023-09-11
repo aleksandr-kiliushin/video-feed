@@ -1,0 +1,48 @@
+---
+
+---
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <slot />
+  </div>
+</header>
+<style>
+  .page-header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #252525bb;
+    backdrop-filter: blur(3px);
+  }
+
+  .page-header-inner {
+    display: grid;
+    grid-template-areas: "logo search-bar results-count";
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    max-width: 964px;
+    margin: 0 auto;
+    padding: 8px 16px;
+  }
+
+  @media (max-width: 1024px) {
+    .page-header-inner {
+      grid-template-areas:
+        "logo search-bar"
+        "results-count results-count";
+      max-width: 648px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .page-header-inner {
+      grid-template-areas:
+        "logo search-bar"
+        "results-count results-count";
+      max-width: 360px;
+    }
+  }
+</style>

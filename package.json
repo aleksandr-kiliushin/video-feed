@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "rm -rf ./dist && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/solid-js": "^3.0.1",
+    "@faker-js/faker": "^8.0.2",
     "astro": "^3.0.12",
     "solid-js": "^1.7.11"
   },
