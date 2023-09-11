@@ -6,14 +6,14 @@ This is a small demo project that allows users to search for videos and sort the
 
 ## Features
 
-- Users can search for videos by name
-- A dropdown list of possible options appears as the user types in the search bar
-- Users can sort the list by date
+- Search for videos by title
+- List of suggestions while typing
+- Sort videos by date
 - The state of the search and filter is saved in the URL
-- The number of videos found is displayed
-- The app is server-side rendered
-- The app has responsive design for mobile users
-- The app uses infinite loading
+- Number of found videos displayed
+- Infinite scrolling
+- Server-side rendering
+- Responsive design
 
 ## Data
 
@@ -34,7 +34,6 @@ type Video = {
 - Typescript
 - Astro.js
 - Solid.js
-- Plain CSS
 - Docker
 
 ## How to Run
