@@ -19,9 +19,9 @@
 }
 
 [name="searchTerm"] {
-  background-color: black;
-  color: white;
-  border: 1px solid #303030;
+  background-color: var(--black-1000);
+  color: var(--black-0);
+  border: 1px solid var(--black-900);
   border-radius: 4px 0 0 4px;
   font-size: 1.8rem;
   padding: 8px 12px;
@@ -31,8 +31,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  border: 1px solid #303030;
+  background-color: var(--black-1000);
+  border: 1px solid var(--black-900);
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
@@ -49,23 +49,23 @@
 [name="sort"]:hover,
 .search-button:hover,
 .suggestions-list-item:hover {
-  border-color: gray;
+  border-color: var(--black-400);
 }
 [name="searchTerm"]:focus,
 [name="sort"]:focus {
   outline: none;
-  border-color: white;
+  border-color: var(--black-0);
 }
 
 [name="sort"] {
   width: 100px;
   padding: 8px 12px;
-  color: white;
-  border: 1px solid #303030;
+  color: var(--black-0);
+  border: 1px solid var(--black-900);
   border-radius: 4px;
   font-size: 1.8rem;
   appearance: none;
-  background-color: black;
+  background-color: var(--black-1000);
   background-image: url("/collapse-arrow.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -78,14 +78,14 @@
   width: 380px;
   padding: 0;
   list-style: none;
-  background-color: black;
-  color: white;
+  background-color: var(--black-1000);
+  color: var(--black-0);
   border-radius: 4px;
   text-align: start;
 }
 
 .suggestions-list-item {
-  border: 1px solid #303030;
+  border: 1px solid var(--black-900);
   margin-top: -1px;
   padding: 8px 12px;
   cursor: pointer;

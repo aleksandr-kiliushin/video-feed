@@ -1,3 +1,13 @@
+:root {
+  --black-1000: black;
+  --black-900: #303030;
+  --black-600-transparent: #252525bb;
+  --black-500: gray;
+  --black-400-transparent: #555555bb;
+  --black-400: lightgray;
+  --black-0: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,8 +39,8 @@ button {
 
 body {
   font-size: 1.6rem;
-  background-color: black;
-  color: white;
+  background-color: var(--black-1000);
+  color: var(--black-0);
 }
 
 .pointer-events-none {
@@ -42,7 +52,7 @@ body {
 }
 
 .lightgray-text {
-  color: lightgray;
+  color: var(--black-500);
 }
 
 main {
