@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.video-list-item-image {
+  border-radius: 4px;
+}
+
 .duration {
   position: absolute;
   top: 190px;

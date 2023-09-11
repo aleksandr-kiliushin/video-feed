@@ -1,4 +1,5 @@
 import { Show, createResource, createSignal } from "solid-js"
+import { debounce } from "../../utils"
 
 import "./index.css"
 
@@ -21,6 +22,8 @@ export const SearchBar = () => {
     { initialValue: [] }
   )
 
+  const debouncedRefetch = debounce(videoTitlesActions.refetch, 500)
+
   let form: HTMLFormElement
 
   return (
@@ -33,7 +36,7 @@ export const SearchBar = () => {
           placeholder="Search ..."
           onInput={(event) => {
             setSearchTerm(event.target.value)
-            videoTitlesActions.refetch()
+            debouncedRefetch()
           }}
           onFocusIn={() => setIsDropdownOpen(true)}
           onFocusOut={() => {

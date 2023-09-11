@@ -1,3 +1,11 @@
+export const debounce = (callback: Function, duration: number) => {
+  let timeoutId: ReturnType<typeof setTimeout>
+  return (...args: unknown[]) => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => callback(...args), duration)
+  }
+}
+
 export const formatDuration = (duration: number) => {
   const minutes = Math.floor(duration / 60)
   const seconds = duration % 60
