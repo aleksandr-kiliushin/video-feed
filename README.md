@@ -2,7 +2,7 @@
 
 ![Demo](./img/demo.png)
 
-This is a small demo project that allows users to search for videos and sort them by date. The project is built using Astro.js and Solid.js, with plain CSS for styling. The app is deployed [here](http://84.201.152.144).
+This is a small demo project that allows users to search for videos and sort them by date. The project is built using Astro.js and Solid.js, with plain CSS for styling.
 
 ## Features
 
